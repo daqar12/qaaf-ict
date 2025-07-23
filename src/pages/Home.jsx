@@ -58,51 +58,49 @@ const Home = () => {
   ];
 
   return (
-    <div className="overflow-x-hidden -mt-4">
+    <div className="overflow-x-hidden -ml-2 -mt-6 -mr-2">
       {/* Hero Section */}
-      <section className="relative  py-20 md:py-28 lg:py-36 bg-gradient-to-r from-primary to-accent text-white rounded-[10px] overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden ">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2232&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay rounded-[10px]"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-accent/80 rounded-[10px]"></div>
-        </div>
+      <section className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-r from-primary to-accent text-white overflow-hidden rounded-[10px]">
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2232&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-accent/80"></div>
+          </div>
 
-         <div className="relative rounded-[10px] max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-center justify-start">
-          {/* Left Side (Text and Buttons) */}
-          <div className="text-left max-w-xl">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 font-heading leading-tight">
-              Empowering Your Business <br className="hidden lg:block" /> With Technology
-            </h1>
-            <p className="text-xl md:text-2xl mb-10 font-body leading-relaxed">
-              Innovative ICT solutions to drive your business forward in the digital age.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-5">
-              <Link
-                to="/services"
-                className="px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300 text-lg"
-              >
-                Our Services
-              </Link>
-              <Link
-                to="/contact"
-                className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-white hover:text-primary transition-all hover:shadow-xl transform hover:-translate-y-1 duration-300 text-lg"
-              >
-                Get Started
-              </Link>
+          <div className="relative max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-center justify-start rounded-[10px]">
+            {/* Left Side (Text and Buttons) */}
+            <div className="text-left max-w-xl">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 font-heading leading-tight">
+                Empowering Your Business <br className="hidden lg:block" /> With Technology
+              </h1>
+              <p className="text-xl md:text-2xl mb-10 font-body leading-relaxed">
+                Innovative ICT solutions to drive your business forward in the digital age.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-5">
+                <Link
+                  to="/services"
+                  className="px-8 py-4 bg-white text-primary rounded-xl font-semibold hover:bg-accent transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-300 text-lg"
+                >
+                  Our Services
+                </Link>
+                <Link
+                  to="/contact"
+                  className="px-8 py-4 border-2 border-white text-white rounded-xl font-semibold hover:bg-accent hover:text-primary transition-all hover:shadow-xl transform hover:-translate-y-1 duration-300 text-lg"
+                >
+                  Get Started
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Side (Logo) */}
+            <div className="mt-10 lg:mt-0 lg:ml-48">
+              <img
+                src="/mylogo.png"
+                alt="Company Logo"
+                className="w-65 h-auto"
+              />
             </div>
           </div>
-
-          {/* Right Side (Logo) */}
-          <div className="mt-10 lg:mt-0 lg:ml-48 flex justify-center">
-            <img
-              src="/mylogo.png"
-              alt="Company Logo"
-              className="w-65 h-auto"
-            />
-          </div>
-        </div>
-      </section>
-
-
+        </section>
       {/* Services Section */}
       <section className="py-20 bg-neutral">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">

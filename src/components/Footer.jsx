@@ -7,8 +7,9 @@ const Footer = () => {
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
     { name: 'About Us', path: '/about' },
-    // { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Portfolio', path: '/portfolio' },
     { name: 'Contact', path: '/contact' },
+    
   ];
 
   const servicesLinks = [
@@ -16,10 +17,11 @@ const Footer = () => {
     { name: 'Mobile Apps', path: '/services#mobile' },
     { name: 'SaaS Solutions', path: '/services#saas' },
     { name: 'ICT Consulting', path: '/services#consulting' },
+    { name: 'Account', path: '/auth/login' },
   ];
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8 rounded-t-[60px] ">
+    <footer className="bg-gray-900 text-white pt-16 pb-8 rounded-t-[40px] ">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
